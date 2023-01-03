@@ -1,0 +1,48 @@
+.index{
+    /* background-color: rgb(111, 111, 245); */
+    margin-top: 130px;
+    margin-bottom: auto;
+}
+#introduction{
+    width: 800px;
+    height: auto;
+    max-width: 90%;
+    overflow: auto;
+    box-shadow:4px 4px 15px #666;
+    margin-left: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: auto;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    
+}
+.header-background{
+    background-image: url(../images/Simple\ Shiny.svg);
+    background-size: cover;
+    padding: 30px;
+    border-radius: 5px 5px 0px 0px;
+    -webkit-border-radius: 5px 5px 0px 0px;
+    -moz-border-radius: 5px 5px 0px 0px;
+    -ms-border-radius: 5px 5px 0px 0px;
+    -o-border-radius: 5px 5px 0px 0px;
+}
+.introduction-content{
+    margin-left: auto;
+    margin-right: auto;
+    height: 600px;
+}
+
+.v-enter-active,
+.v-leave-active {
+  transition: opacity 0.5s ease;
+}
+
+.v-enter-from,
+.v-leave-to {
+  opacity: 0;
+}
+

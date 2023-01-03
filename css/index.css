@@ -1,0 +1,462 @@
+/* Banner部分开始 */
+#banner {
+    margin-top: 95px;
+}
+
+#banner .banner-img {
+    position: relative;
+    /* border-radius: 0 0 200px 0; */
+    overflow: hidden;
+}
+
+#banner .banner-img img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+#banner .banner-img::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #0061f2d8;
+}
+
+#banner .banner-img .text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 100%;
+    padding: 0 10px;
+}
+
+#banner .banner-img .text h2 {
+    font-size: 33px;
+    font-weight: normal;
+    word-spacing: nowrap;
+}
+
+#banner .banner-img .text p {
+    color: rgb(224, 224, 224);
+    font-size: 16px;
+    padding: 0 21px;
+    word-spacing: 2px;
+}
+
+#banner .banner-img .text .more {
+    display: inline-block;
+    color: #fff;
+    margin: 6px 0;
+    padding: 1rem 4.25rem;
+    border: 2px solid #fff;
+    max-width: 100%;
+    transition: all .4s;
+    font-size: 16px;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+#banner .banner-img .text .more:hover {
+    background-color: #fff;
+    color: var(--important-color);
+}
+
+/* Banner部分结束 */
+
+/* 项目介绍部分开始 */
+#introduce .int_card {
+    overflow: hidden;
+    color: #fff;
+    position: relative;
+    background-color: #000;
+}
+
+#introduce .int_card img {
+    transition: all .4s;
+}
+
+#introduce .int_card .text {
+    position: absolute;
+    inset: 30px;
+    padding: 0px 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#introduce .int_card .text::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 100%;
+    height: 100%;
+    border-left: 4px solid rgba(255, 255, 255, .8);
+    background-color: rgba(255, 255, 255, .5);
+    opacity: 0;
+    transition: all .5s;
+    transition-delay: .6s;
+}
+
+#introduce .int_card .text h5,
+#introduce .int_card .text a {
+    opacity: 0;
+    transition: all .4s;
+}
+
+#introduce .int_card .text h5 {
+    font-weight: 400;
+    transform: translate(30%, 0);
+    transition-delay: .3s;
+    font-size: 1.25rem;
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+}
+
+#introduce .int_card .text a {
+    transform: translate(0%, 30%);
+    z-index: 99;
+    text-align: center;
+    visibility: hidden;
+}
+
+#introduce .int_card:hover img {
+    opacity: .7;
+}
+
+#introduce .int_card:hover .text h5 {
+    opacity: 1;
+    transform: translate(0, 0);
+    transition-delay: .4s;
+}
+
+#introduce .int_card:hover .text a {
+    opacity: .9;
+    transform: translate(0, 0);
+    transition: transform .4s ease .6s, opacity .4s ease .6s, background .4s ease 0s;
+    visibility: visible;
+}
+
+#introduce .int_card:hover .text::before {
+    background-color: rgba(255, 255, 255, 0);
+    left: 0;
+    opacity: 1;
+    transition-delay: 0s;
+}
+
+#introduce .label {
+    position: absolute;
+    top: 9px;
+    right: 0px;
+    display: block;
+    padding: 5px;
+    background-color: #0061f2;
+    font-size: 14px;
+    transition: all .4s;
+    z-index: 9;
+    color: #fff;
+    pointer-events: none;
+}
+
+#introduce .int_card:hover+.label {
+    right: 30px;
+}
+
+/* 项目介绍部分结束 */
+
+/* 医学动态部分开始 */
+#development .dev_bgc {
+    background: linear-gradient(to right, #e5f2f8 0%, #e5f2f8 70%, transparent 70%, transparent 100%);
+}
+
+#development .dev_text a {
+    color: #124fa9;
+}
+
+#development .dev_p a {
+    color: #69707a !important;
+}
+
+/* 医学动态部分结束 */
+
+/* 团队介绍部分开始 */
+#team .team_card {
+    transition: all .4s;
+    cursor: pointer;
+    border-radius: 0 !important;
+}
+
+#team .team_card img {
+    border-radius: 0 !important;
+}
+
+#team .team_card:hover {
+    transform: translateY(-10px);
+}
+
+#team .team_card .team_a {
+    color: #1557ba;
+    letter-spacing: 1px;
+}
+
+#team .team_card .team_a i {
+    transition: all .4s;
+}
+
+#team .team_card .team_a:hover i {
+    transform: translateX(5px);
+}
+
+#team .team_card .card-text {
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+}
+
+/* 团队介绍部分结束 */
+
+/* 关于我们部分开始 */
+#banner1 .banner_img {
+    width: 100%;
+    /* height: 500px; */
+    background: url(../images/common/3.png) no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    z-index: 1;
+}
+
+#banner1 .banner_img::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to left, #2559e69c, transparent);
+}
+
+/* 关于我们装饰 */
+#banner1 .banner_decorat::before,
+#banner1 .banner_decorat::after,
+#banner1 .banner_decorat1::before,
+#banner1 .banner_decorat1::after {
+    content: '';
+    position: absolute;
+    background: none;
+    border-top: 2px solid #f0f0f0;
+    border-left: 2px solid #f0f0f0;
+}
+
+#banner1 .banner_decorat::before {
+    top: 20px;
+    left: 10px;
+    width: 40px;
+    height: 80px;
+}
+
+#banner1 .banner_decorat::after {
+    top: 0px;
+    left: 30px;
+    width: 80px;
+    height: 40px;
+}
+
+#banner1 .banner_decorat1::before {
+    bottom: 0px;
+    right: 30px;
+    width: 80px;
+    height: 40px;
+    border: none;
+    border-bottom: 2px solid #f0f0f0;
+    border-right: 2px solid #f0f0f0;
+}
+
+#banner1 .banner_decorat1::after {
+    bottom: 20px;
+    right: 10px;
+    width: 40px;
+    height: 80px;
+    border: none;
+    border-bottom: 2px solid #f0f0f0;
+    border-right: 2px solid #f0f0f0;
+}
+
+#banner1 .button {
+    display: inline-block;
+    color: #fff;
+    margin: 6px 0;
+    padding: .5rem 1rem;
+    border: 2px solid #fff;
+    max-width: 100%;
+    transition: all .4s;
+    font-size: 16px;
+    letter-spacing: 2px;
+    /* font-weight: bold; */
+}
+
+#banner1 .button:hover {
+    background-color: #fff;
+    color: var(--important-color);
+}
+/* 关于我们部分结束 */
+
+/* 专家介绍部分开始 */
+#expert .expert_img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px 0 0 5px;
+}
+
+#expert .swiper {
+    width: 100%;
+    height: 100%;
+}
+
+#expert .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+#expert .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#expert .swiper {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#expert .my-bullet {
+    display: inline-block;
+    width: 30px;
+    height: 3px;
+    background-color: rgb(183, 210, 255);
+    margin: 0 5px;
+    position: relative;
+    opacity: .5;
+    transition: all .2s;
+}
+
+#expert .my-bullet:hover {
+    background-color: rgb(27, 103, 235);
+}
+
+#expert .my-bullet-active {
+    opacity: .9;
+}
+
+#expert .my-bullet::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 0;
+    height: 100%;
+    background-color: rgb(27, 103, 235);
+    animation: move_out 1s forwards;
+}
+
+#expert .my-bullet-active.my-bullet::before {
+    animation: move_in 1s forwards;
+}
+
+#expert .hidden_4 {
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+}
+
+@keyframes move_in {
+    0% {
+        width: 0;
+        left: 0;
+    }
+
+    100% {
+        width: 100%;
+        left: 0;
+    }
+}
+
+@keyframes move_out {
+    0% {
+        width: 100%;
+        right: 0;
+    }
+
+    100% {
+        width: 0%;
+        right: 0;
+    }
+}
+
+/* 专家介绍部分结束 */
+
+
+/* 媒体查询 */
+
+/* 中等屏幕下 */
+@media screen and (max-width:991px) {
+    #banner .banner-img img {
+        height: 400px;
+    }
+
+    #development .dev_bgc {
+        background: linear-gradient(to bottom, #dfedf9 0%, #dfedf9 70%, transparent 70%, transparent 100%);
+    }
+
+    #expert .expert_img {
+        width: 90px !important;
+        height: 90px !important;
+        border-radius: 50%;
+    }
+
+    #banner1 .banner_img::before {
+        background-image: none !important;
+        background-color: #2559e69c;
+    }
+
+}
+
+/* 手机屏幕下 */
+@media screen and (max-width:575px) {
+    #introduce .int_card .text h5 {
+        font-size: 1.25rem !important;
+    }
+
+}
+
+/* 中等屏幕以上 */
+@media screen and (min-width:991px) {
+    #expert .h_lg-100 {
+        height: 100% !important;
+    }
+}
+

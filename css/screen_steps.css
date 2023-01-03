@@ -1,0 +1,75 @@
+.progress-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    position: relative;
+    width: 100%;
+}
+
+.progress-container::before {
+    content: '';
+    width: 100%;
+    height: 3px;
+    background-color: #e0e0e0;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    z-index: -1;
+}
+
+.progress {
+    position: absolute;
+    width: 0;
+    height: 3px;
+    background-color: #3498db;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    z-index: -1;
+    transition: all .4s;
+}
+
+.circle {
+    background-color: #fff;
+    color: #999;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: 3px solid #e0e0e0;
+    transition: all .4s;
+    position: relative;
+}
+
+.circle a {
+    color: #999;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.circle.active a {
+    color: #3498db;
+}
+
+.circle.active {
+    border-color: #3498db;
+    transition: all .4s;
+    color: #3498db;
+}
+
+.circle .text {
+    position: absolute;
+    width: 120px;
+    text-align: center;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+td {
+    padding: 1rem .5rem !important;
+}

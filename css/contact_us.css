@@ -1,0 +1,156 @@
+/* 问题部分开始 */
+#question #space_accordion .accordion-item {
+    border: none !important;
+    padding: 12px 0;
+}
+
+#question #space_accordion .accordion-item .accordion-button {
+    box-shadow: none !important;
+    transition: all .4s;
+    font-size: 1rem;
+    color: #3f3f3f;
+    border-radius: 0 !important;
+}
+
+#question #space_accordion .accordion-item .accordion-button::after {
+    background: url(../images/contact_us/jia.svg);
+}
+
+#question #space_accordion .accordion-item .accordion-button:not(.collapsed)::after {
+    background: url(../images/contact_us/jian.svg);
+    transform: none;
+}
+
+#question #space_accordion .accordion-item .accordion-button:hover {
+    color: #003073;
+}
+
+.accordion-button:not(.collapsed) {
+    color: #003073 !important;
+    background-color: rgba(0, 76, 189, 0.1) !important;
+}
+
+#question #space_accordion .accordion-item .accordion-body {
+    background-color: rgba(0, 76, 189, 0.1) !important;
+    color: #51596c !important;
+}
+/* 问题部分结束 */
+
+/* 在线问答部分开始 */
+#question1 .even {
+    padding-left: 1rem;
+    border-left: 3px solid #dee2e6;
+}
+
+#question1 .infos img {
+    width: 48px;
+    height: 48px;
+}
+
+#question1 .infos b {
+    color: #212529;
+}
+
+#question1 .infos .value {
+    word-wrap: break-word;
+}
+
+#question1 .controls,
+#question1 .controles{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all .4s;
+}
+
+#question1 .controls img {
+    width: 48px;
+    height: 48px;
+    margin-right: 10px;
+}
+
+#question1 textarea {
+    flex: 1;
+    height: 100%;
+    outline: none;
+    font-size: 16px;
+    padding: 12px;
+    resize: none;
+    background-color: #f1f2f3;
+    border-radius: 5px;
+    color: #18191c;
+    border: 1px solid transparent;
+    transition: .2s;
+}
+
+#question1 textarea:hover {
+    background-color: transparent;
+    border: 1px solid #dee2e6;
+}
+
+#question1 textarea:focus{
+    background-color: transparent !important;
+    border: 1px solid #dee2e6 !important;
+}
+
+#question1 button {
+    width: 70px;
+    height: 50px;
+    background-color: #80d7f6;
+    color: #fff;
+    outline: none;
+    border: none;
+    margin-left: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: .2s;
+}
+
+#question1 button:active {
+    transform: scale(.98);
+}
+
+#question1 button:hover {
+    background-color:  #00aeec !important;
+}
+
+#question1 .a_color {
+    color: #69707a;
+    transition: all .2s;
+}
+
+#question1 .a_color:hover {
+    color: #003073;
+}
+
+#question1 .info1 {
+    background-color: #f1f2f3;
+    padding: 16px;
+    margin: 1rem 0;
+}
+
+#question1 .huifucolor {
+    color: #003073;
+}
+
+#question1 svg {
+    margin: 0 3px 0 0;
+}
+
+#question1 .zan i,
+#question1 .cai i {
+    transition: all .2s;
+    width: 14px;
+}
+
+#question1 .zan i:hover,
+#question1 .cai i:hover  {
+    color: #00aeec;
+}
+
+#question1 .full {
+    color: #00aeec;
+}
+/* 在线问答部分结束 */
